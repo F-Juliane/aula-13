@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.app.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity2 : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,9 +16,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View) {
-        if(view.id == R.id.button_cadastrar_produto) {
+        if(view.id == R.id.button_cadastro_produto) {
             var switchActivityIntent = Intent(this, MainActivity2::class.java)
             startActivity(switchActivityIntent)
         }
+    }
+
+    fun testBD() {
+        val db = AppDatabase.getDatabase(this).ProductDAO()
+        val prod = ProductModel().apply {
+            this.id = 0
+            this.name = "Smartphone"
+            this.price = 999f
+            this.isAvailable = false
+        }
+        db.insert(prod)
     }
 }

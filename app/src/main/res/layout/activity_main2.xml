@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/formulario_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cadastrar_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_nome"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/digite_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digite_nome"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        android:onClick="onClick"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/cadastrar_nome"
+        app:layout_constraintTop_toTopOf="@id/cadastrar_nome" />
+
+    <TextView
+        android:id="@+id/cadastrar_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_preco"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/digite_preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digite_preco"
+        android:textSize="12sp"
+        android:textColor="@color/grey"
+        android:onClick="onClick"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/cadastrar_preco"
+        app:layout_constraintTop_toTopOf="@id/cadastrar_preco" />
+
+    <TextView
+        android:id="@+id/cadastrar_disponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastro_disponivel"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:onClick="onClick"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check_disponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/cadastrar_disponivel"
+        app:layout_constraintTop_toTopOf="@+id/cadastrar_disponivel" />
+
+    <Button
+        android:id="@+id/button_cadastro_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadastrar_produto"
+        android:textSize="12sp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/button_color"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
