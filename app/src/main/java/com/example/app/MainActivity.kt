@@ -20,5 +20,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             var switchActivityIntent = Intent(this, MainActivity2::class.java)
             startActivity(switchActivityIntent)
         }
+        if(view.id == R.id.button_visualizar_produto) {
+            var switchActivityIntent = Intent(this, MainActivity3::class.java)
+            startActivity(switchActivityIntent)
+        }
     }
 }

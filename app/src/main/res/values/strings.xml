@@ -2,10 +2,15 @@
     <string name="app_name">app</string>
     <string name="cadastrar_produto">Cadastrar Produto</string>
     <string name="visualizar_produto">Visualizar Produto</string>
+
     <string name="formulario">Cadastro de Produto</string>
     <string name="cadastro_nome">Nome:</string>
     <string name="digite_nome">digite o nome do produto…</string>
     <string name="cadastro_preco">Preço:</string>
     <string name="digite_preco">digite o preço do produto…</string>
     <string name="cadastro_disponivel">Disponível:</string>
+
+    <string name="buscar_produto">Visualizar produto</string>
+    <string name="buscar_nome">Nome do produto:</string>
+    <string name="buscar">Visualizar</string>
 </resources>
